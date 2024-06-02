@@ -1,0 +1,207 @@
+.sec{
+    background-image: url(building-1727807_1280.jpg);
+}
+.back{
+  background-color:transparent;
+  border: 1px solid orange;
+  padding: 5px 25px 5px 25px;
+
+}
+.inbox{
+  background-color: rgba(29, 28, 28, 0.411);
+padding: 10px;
+}
+.inbox1{
+  background-image: url(man.jpg);
+  background-size: cover;
+  width:100%;
+  background-position: top;
+}
+.para{
+  padding-bottom: 160px;
+}
+.head{
+  padding-top: 300px;
+}
+.pt{
+  padding-top: 130px;
+}
+.line{
+ border-top: 10px solid rgb(254, 168, 7);
+  width: 50px;
+  margin: auto;
+  margin-top:30px;
+}
+.para1{
+  margin-top: 25px;
+  padding-bottom: 50px;
+}
+.inbox6{
+  /* background-color: rgba(213, 208, 208, 0.886); */
+  background-color: rgba(243, 241, 241, 0.998);
+  text-align: center;
+  padding: 10px;
+}
+.sec1{
+  background-color: rgba(243, 241, 241, 0.998);
+  padding-top: 55px;
+}
+.inbox8{
+  text-align: right;
+}
+.inbox11{
+  height: 300px;
+}
+.inbox11 img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+.inbox12{
+  height: 300px;
+}
+.inbox12 img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+.sec2{
+  background-image: url(latops2.jpg);
+}
+.inbox13{
+  padding: 60px 55px 55px 60px;
+  font-size: 40px;
+}
+.fn{
+  height: 25px;
+  font-weight: bold;
+}
+.space{
+  margin-right: 250px;
+}
+.inbox14{
+  padding: 50px 0px 15px 0px;
+}
+.inside{
+  padding: 125px;
+}
+.inbox16{
+  min-height: 180px;
+}
+.bck1{
+  background-color: antiquewhite;
+}
+.bck{
+  background-color: ivory;
+}
+.inbox18{
+ min-height: 100px;
+}
+.inbox18 img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position:center;
+}
+.sec3{
+  background-image: url(building-1727807_1280.jpg);
+  margin-top: 75px;
+  padding-bottom:75px;
+}
+.inbox21{
+  background-color: white;
+  text-align:center;
+  width: 100%;
+  min-height: 270px;
+  padding: 25px;
+
+}
+.inbox21 img{
+  border-radius: 50%;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position:center;
+}
+.sec4{
+  background-color:rgba(244, 240, 240, 0.931);
+}
+.inbox23{
+  background-color: white;
+  padding: 25px;
+  border-radius: 5%;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+.inbox24{
+ height: 130px;
+}
+.inbox24 img{
+  border-radius: 50%;
+  width: 100%;
+  height:130px;
+  object-fit: cover;
+  object-position:top;
+}
+.inbox25{
+  height: 130px;
+  
+ }
+ .inbox25 img{
+   border-radius: 50%;
+   width: 100%;
+   height:130px;
+   object-fit: cover;
+   object-position:top;
+ }
+ .sec5{
+  background-image: url(latops2.jpg);
+  padding-top: 75px;
+  padding-bottom: 50px;
+ }
+ .inbox27{
+text-align: center;
+padding: 50px 0px;
+ }
+ .para3{
+  font-size: 20px;
+ }
+ .pr3{
+  padding-top: 110px;
+  text-shadow: 0px 1px 0px black;
+ }
+ .bi1{
+  font-size: 40px;
+ }
+ .img1{
+  width:300px;
+  height: 100%;
+ }
+ @media( max-width:987px){
+    .inbox8{
+      text-align: center;
+     
+    }
+.img1{
+  width: 100%;
+  height: auto;
+}
+ }
+ @media( max-width:987px){
+  .inbox9{
+    /* text-align: center; */
+    
+  }
+.img1{
+  width: 100%;
+  height: auto;
+}
+}
+
+
+
+ 
+
+ 
