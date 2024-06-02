@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,58 +6,567 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='bootstrap-5.3.2-dist/css/bootstrap.min.css'>
-    <link rel="stylesheet" href="style.css">
-    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='build.css'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <section class="sec1">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="inbox">
-                        <h1>Facebook</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, praesentium aliquid nam eveniet eum perspiciatis qui iusto quidem magnam maiores, fugit amet veritatis eaque nihil laboramet consectetur, adipisicing elit. Possimus, praesentium aliquid nam eveniet eum perspiciatis qui iusto quidem magnam maiores, fugit amet veritatis eaque nihil laboriosam? Voluptatem quisquam doloremque qui?</p>
-                    </div>
-                </div>
-                <div class="col-sm-8">
-                    <div class="inbox">
-                        <h1>Facebook</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, praesentium aliquid nam eveniet eum perspiciatis qui iusto quidem magnam maiores, fugit amet veritatis eaque nihil laboramet consectetur, adipisicing elit. Possimus, praesentium aliquid nam eveniet eum perspiciatis qui iusto quidem magnam maiores, fugit amet veritatis eaque nihil laboriosam? Voluptatem quisquam doloremque qui?</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm">
-                    <div class="inbox"></div>
-                </div>
-                <div class="col-sm">
-                    <div class="inbox"></div>
-                </div>
-                <div class="col-sm">
-                    <div class="inbox"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <style>
+    
+.input-container {
+  position:relative;
+  width: 250px;
+  margin-bottom: 15px;
+}
 
-    <section class="sec2">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <div class="inbox"></div>
-                </div>
-                <div class="col-sm">
-                    <div class="inbox"></div>
-                </div>
-                <div class="col-sm">
-                    <div class="inbox"></div>
-                </div>
-                <div class="col-sm">
-                    <div class="inbox"></div>
-                </div>
-            </div>
+.icon {
+  padding: 6px;
+  color: black;
+  min-width: 50px;
+  text-align: center;
+  position:absolute;
+  right:0px;
+  top:0px;
+  z-index:10px;
+ cursor: pointer;
+  display:block;
+}
+
+.input-field {
+  width: 100%;
+  padding: 5px;
+  outline: none;
+  position:absolute;
+  background-color: transparent;
+  border: 2px solid rgb(162, 156, 156);
+  left:0px;
+  top:0px;
+}
+::placeholder {
+  color:whitesmoke;
+  opacity: 1; /* Firefox */
+}
+  </style>
+<section class="sec">
+  <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="javascript:void(0)">
+        <div class="input-container">
+          <input class="input-field" type="text" placeholder="Search">
+           <button icon><i class="bi bi-search text-light icon"></i></button>
         </div>
-    </section>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+             <a class="nav-link text-warning" href="home.html"><b>HOME</b></a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link text-dark" href="about.html"><b>ABOUT</b></a>
+           </li>
+           <li class="nav-item">
+           <a class="nav-link text-dark" href="contact.html"><b>CONTACT</b></a>
+           </li>
+         </ul>
+      </div>
+    </div>
+  </nav>
+  <p class="h1 text-warning pt-5"><b>Thoughtful,<br>collaborative and <br>insightful</b></p>
+  <div class="row pt-5">
+    <div class="col-xl-4 col-lg-4 col-sm-6 mt-3">
+      <div class="inbox">
+        <div class="row">
+          <div class="col-8">
+            <div class="inbox16">
+              <p class="h5 text-light">BUILDING</p>
+              <p class="text-light">Excepteur sint occaecat guigugus78tb tguitibuitgu8tib it</p>
+              <button class="back text-light" type="button" class="btn btn-warning"><b>More</b></button>
+            </div>
+          </div>
+          <div class="col-4"><img src="icons8-building-64.png" alt=""width="100%" height="105px"></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-sm-6 mt-3">
+      <div class="inbox">
+        <div class="row">
+          <div class="col-8">
+            <div class="inbox16">
+              <p class="h5 text-light">INDUSTRIAL</p>
+              <p class="text-light">Excepteur sint occaecat jgbjguysb guigbkaufua ugjvayhfuy</p>
+              <button class="back text-light" type="button" class="btn btn-warning"><b>More</b></button>
+            </div>
+          </div>
+          <div class="col-4">
+            <img src="icons8-manufacturing-100.png" alt=""width="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-sm-12 mt-3">
+      <div class="inbox">
+        <div class="row">
+          <div class="col-8">
+            <div class="inbox16">
+              <p class="h5 text-light">FUTURE</p>
+              <p class="text-light">Excepteur sint occaecat ggjuugjguugvtyff guyfgjvyedtygjvn n</p>
+              <button class="back text-light" type="button" class="btn btn-warning"><b>More</b></button>
+            </div>
+          </div>
+          <div class="col-4"><img src="icons8-smart-home-100.png" alt="icon" width="100%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+</div>
+</section>
+<div class="container">
+  <div class="row pb-5 ">
+    <div class="col-xl-4 col-lg-4 col-sm-12 pt-4">
+      <div class="inbox1">
+        <h3 class="text-center head">NATE HUDSON</h3>
+        <p class="para text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iure soluta blanditiis magnam eligendi quos ea. Impedit laboriosam voluptate,</p>
+      </div>
+    </div>
+    <div class="col-xl-8 col-lg-8 col-sm-12">
+      <div class="row">
+        <div class="col">
+          <div class="inbox5">
+            <h1 class="text-center pt"><b>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</b></h1>
+            <hr class="line">
+            <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorum odit similique nihil nobis consectetur repellendus non, velit voluptate, neque tempora reprehenderit, voluptas odio dicta! Maiores fugiat fugit voluptate dolore!velit voluptate, neque tempora reprehenderit, voluptas odio dicta! Maiores fugiat fugit voluptate dolore!</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="inbox6">
+            <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas illo commodi voluptates dolores quo nobis consequuntur atque? Pariatur unde quae vitae ipsam. Ratione, ipsam illo cupiditate ea atque suscipit quod.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas illo commodi voluptates dolores quo nobis consequuntur atque? Pariatur unde quae vitae ipsam. Ratione, ipsam illo cupiditate ea atque suscipit quod.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas illo commodi voluptates dolores quo nobis consequuntur atque? Pariatur unde quae vitae ipsam. Ratione, ipsam illo cupiditate ea atque suscipit
+            </p>
+              <button type="button" class="btn btn-warning text-secondary"><b>More</b></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="sec1">
+  <div class="container">
+    <div class="row pb-5">
+      <div class="col-xl-5 col-lg-7 col-sm-12 pb-4">
+        <div class="inbox7">
+          <p class="h3 pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis labore temporibus eveniet amet, ea, voluptatem adipisci commodi necessitatibus</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio pariatur molestiae dolores nisi ea repudiandae placeat nesciunt accusamus blanditiis ducimus minus consequatur tempore culpa fuga esse, repellendus maxime deleniti iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iure voluptas tenetur amet eius facilis hic a beatae alias aliquam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio pariatur molestiae dolores nisi ea repudiandae placeat nesciunt accusamus blanditiis ducimus minus consequatur tempore culpa fuga esse,  </p>
+        </div>
+      </div>
+      <div class="col-xl-7 col-lg-5 col-sm-12 pb-4">
+        <div class="inbox8">
+          <img class="img1" src="build1.webp" alt="build">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-sm-12">
+          <div class="inbox9">
+            <img class=".img1" src="superviour.png" alt="superviour">
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-sm-12">
+          <div class="inbox9">
+            <h5>EARNING YOUR BUSINESS WITH EXPERIENCE,<br> EXPERTISE,AND TRUST</h5>
+            <div class="row">
+              <div class="col-1 px-0 ">
+                <i class="bi bi-check text-warning ms-2 pt-0"style="font-size:25px;font-weight: bold;"></i>
+              </div>
+              <div class="col-11 ps-0">
+                <p class="h6 pt-2 mt-0">Component production equipment</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-1 px-0 ">
+                <i class="bi bi-check text-warning ms-2 pt-0"style="font-size:25px;font-weight: bold;"></i>
+              </div>
+              <div class="col-11 ps-0">
+                <p class="h6 pt-2 mb-2">Wall panel framing and sheathing equipment</p>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-1 px-0 ">
+                <i class="bi bi-check text-warning ms-2 pt-0"style="font-size:25px;font-weight: bold;"></i>
+              </div>
+              <div class="col-11 ps-0">
+                <p class="h6 pt-2 mt-0">Linear Saws</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-1 px-0 ">
+                <i class="bi bi-check text-warning ms-2 pt-0"style="font-size:25px;font-weight: bold;"></i>
+              </div>
+              <div class="col-11 ps-0">
+                <p class="h6 pt-2  mb-2">Saws-Component,Radial Arm,Automated Measured System</p>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-1 px-0 ">
+                <i class="bi bi-check text-warning ms-2 pt-0"style="font-size:25px;font-weight: bold;"></i>
+              </div>
+              <div class="col-11 ps-0">
+                <p class="h6 pt-2 mt-0">Material Handling System</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-1 px-0 ">
+                <i class="bi bi-check text-warning ms-2 pt-0"style="font-size:25px;font-weight: bold;"></i>
+              </div>
+              <div class="col-11 ps-0">
+                <p class="h6 pt-2 mb-2">Roll-off Truss Trailers</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-1 px-0 ">
+                <i class="bi bi-check text-warning ms-2 pt-0"style="font-size:25px;font-weight: bold;"></i>
+              </div>
+              <div class="col-11 ps-0">
+                <p class="h6 pt-2 mt-0">Waste Reduction Equipment</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-1 px-0 ">
+                <i class="bi bi-check text-warning ms-2 pt-0"style="font-size:25px;font-weight: bold;"></i>
+              </div>
+              <div class="col-11 ps-0">
+                <p class="h6 pt-2 mb-2">Replacement Production Surfaces</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-1 px-0 ">
+                <i class="bi bi-check text-warning ms-2 pt-0"style="font-size:25px;font-weight: bold;"></i>
+              </div>
+              <div class="col-11 ps-0">
+                <p class="h6 pt-2 mb-2">Plant Layout Experts/Productions Consultants</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col">
+          <div class="inbox10 text-center">
+            <h1 class="fw-bold ">Wood Truss System</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum placeat laboriosam ipsum in culpa, veritatis nostrum maxime! Repellendus aperiam repellat libero illum quidem nemo nam dolore, numquam nulla, soluta quo.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum placeat laboriosam ipsum in culpa, veritatis nostrum maxime! Repellendus aperiam repellat libero illum quidem nemo nam dolore, numquam nulla, soluta quo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-sm-12 mt-3">
+          <div class="inbox11 bg-warning p-4 text-light">
+            <p class="h6 text-center pt-3">ABOUT US</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe perspiciatis, exercitationem dignissimos modi est suscipit vitae! Voluptatibus vitae autem reiciendis necessitatibus, mollitia rerum quasi facere. Numquam, commodi! Modi, facere cumque.</p>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-sm-12 mt-3">
+          <div class="inbox11">
+            <img src="WORKER.png" alt="WORKER" width="100%">
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-sm-12 mt-3">
+          <div class="inbox11 bg-warning p-4 text-light">
+            <p class="h6 text-center pt-3">OUR STARTERY</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe perspiciatis, exercitationem dignissimos modi est suscipit vitae! Voluptatibus vitae autem reiciendis necessitatibus, mollitia rerum quasi facere. Numquam, commodi! Modi, facere cumque.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-sm-12 mt-3">
+          <div class="inbox12 mt-3">
+            <img src="hand-wood-cutting-machine.jpg" alt="hand" width="100%">
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-sm-12 mt-3">
+          <div class="inbox12 bg-white mt-3">
+            <p class="h6 text-center pt-3">OUR MISSION</p>
+            <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe perspiciatis, exercitationem dignissimos modi est suscipit vitae! Voluptatibus vitae autem reiciendis necessitatibus, mollitia rerum quasi facere. Numquam, commodi! Modi, facere cumque.</p>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-sm-12 mt-3">
+          <div class="inbox12 mt-3">
+            <img src="worker2.png" alt="worker2" width="100%">
+          </div>
+        </div>
+      </div>
+      <div>
+      </div>
+    </div>
+  </div>   
+</section>
+<section class="sec2">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-3 col-lg-3 col-sm-12 mt-3">
+        <div class="inbox13 text-center">
+          <i class="bi bi-person-circle text-warning"></i>
+          <h1 class="text-light">16</h1>
+          <h5 class="text-warning">SPECIALISTS</h5>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-3 col-sm-12 mt-3">
+        <div class="inbox13 text-center">
+          <i class="bi bi-people-fill text-warning"></i>
+          <h1 class="text-light">47</h1>
+          <h5 class="text-warning">HAPPY CLIENTS</h5>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-3 col-sm-12 mt-3">
+        <div class="inbox13 text-center">
+          <i class="bi bi-briefcase text-warning"></i>
+          <h1 class="text-light">56</h1>
+          <h5 class="text-warning">SUCCESSFUL CASES</h5>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-3 col-sm-12 mt-3">
+        <div class="inbox13 text-center">
+          <i class="bi bi-trophy-fill text-warning"></i>
+          <h1 class="text-light">23</h1>
+          <h5 class="text-warning">AWARDS</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-sm-12 mt-3">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)">
+              <div class="input-container">
+                <button type="button" class="btn btn-warning text-light">DESCRIPTION</button>
+              </div>   
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                   <a class="nav-link text-dark space" href="Specification.html"><b>SPECIFICATION</b></a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link text-dark space" href="Review.html"><b>REVIEWS</b></a>
+                 </li>
+               </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="row">
+          <div class="col-4">
+            <img src="building-1727807_1280.jpg" alt="build" width="100%">
+          </div>
+          <div class="col-8">
+            <div class="inbox15">
+              <p class="h6">DESCRIPTION</p>
+              <p class="text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A culpa consectetur illum molestiae quam, impedit cumque voluptate voluptatum quia reprehenderit, tempore tempora, voluptatibus maiores itaque aliquam? Illo nisi accusantium voluptatem!</p>
+                <ul class="ps-3">
+                <li>expecteur sint occaecat cupidatat non</li>
+                <li>expecteur sint occaecat cupidatat non</li>
+                <li>expecteur sint occaecat cupidatat non</li>
+                <li>expecteur sint occaecat cupidatat non</li>
+                <li>expecteur sint occaecat cupidatat non</li>
+                <li>expecteur sint occaecat cupidatat non</li>
+                <li>expecteur sint occaecat cupidatat non</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <div class="row">
+        <div class="col">
+          <div class="inbox17">
+            <h1 class="text-center">Responsive Pricing Table</h1>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae nostrum blanditiis hic <br>reprehenderit repellat distinctio dolorem. Neque sed dignissimos ?</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-3 col-lg-4 col-sm-12 mt-3">
+          <div class="inbox18">
+            <div class="bck1">
+              <p class="h5 text-center fn pt-4">BASIC</p>
+              <h2 class="text-center mb-0 pt-4 pb-4">$ 30</h2>
+            </div>
+          </div>
+          <div class="bck text-center pb-5">
+              <p class="text-center">1 full user</p>
+              <p class="text-center">1000 email previews</p>
+              <p class="text-center">5 contacts per client</p>
+              <p class="text-center">5 coffee cups</p>
+              <button type="button" class="btn btn-secondary ">BUY NOW</button>
+          </div>    
+        </div>
+        <div class="col-xl-3 col-lg-4 col-sm-12 mt-3">
+          <div class="inbox18 ">
+            <div class="bg-warning">
+              <p class="h5 text-center fn pt-4">STANARD</p>
+              <h2 class="text-center pt-4 mb-0 pb-4">$ 60</h2>
+            </div>
+          </div>
+          <div class="text-center pb-5">
+              <p class="text-center">5 full user</p>
+              <p class="text-center">2000 email previews</p>
+              <p class="text-center">10 contacts per client</p>
+              <p class="text-center">10 coffee cups</p>
+              <button type="button" class="btn btn-secondary ">BUY NOW</button>
+          </div>    
+        </div>
+        <div class="col-xl-6 col-lg-4 col-sm-12 mt-3">
+          <div class="inbox18">
+            <img src="plan.png" alt="plan" width="100%" height="400px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sec3">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <div class="inbox20">
+          <h1 class="text-center pt-5"> Building Company</h1>
+          <p class="text-center pt-3 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque totam ipsa, magni quasi, mollitia</p>
+        </div>
+        <div class="row">
+          <div class="col-xl-3 col-lg-6 col-sm-6 mt-3">
+            <div class="inbox21">
+              <img src="build1.webp" alt="build" width="100%">
+              <p class="h6">DESIGN-BUILD</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-sm-6 mt-3">
+            <div class="inbox21">
+              <img src="remould.png" alt="remould" width="100%">
+              <p class="h6">REMOULDING</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-sm-6 mt-3">
+            <div class="inbox21">
+              <img src="city spaces.png" alt="city" width="100%">
+              <p class="h6">CITY SPACES</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-sm-6 mt-3">
+            <div class="inbox21">
+              <img src="civil.png" alt="civil" width="100%">
+              <p class="h6">CIVIL ENGINEERING</p>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn btn-outline-light text-light mt-5">VIEW MORE</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sec4">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="inbox22">
+          <h1 class="text-center mt-5">Read what our customers says</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-sm-12 mt-3">
+        <div class="inbox23">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut deserunt architecto, illo temporibus tempore id quod sequi? Sequi sunt nisi quis iste optio, odio corrupti ratione impedit unde ipsa recusandae.</p>
+          <div class="row">
+            <div class="col-3">
+              <div class="inbox24">
+                <img src="celia.png" alt="celia">
+              </div>
+            </div>
+            <div class="col-9">
+              <div class="inbox24">
+                <p class="h6 mt-4 ">CELIA ALMENDA</p>
+                <p>CEO Company</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-sm-12 mt-3">
+        <div class="inbox23">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus saepe, eaque quos laborum cumque nam praesentium, officia quae enim iusto magni quidem distinctio eius expedita fuga soluta, magnam tenetur commodi? </p>
+          <div class="row">
+            <div class="col-3">
+              <div class="inbox25">
+                <img src="frank.png" alt="frank" width="100%">
+              </div>
+            </div>
+            <div class="col-9">
+              <div class="inbox25">
+                <p class="h6 mt-4 ">FRANK KNNEY</p>
+                <p>Financial Director</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="inbox26 text-center mt-3 px-3 mb-5">
+            <button type="button" class="btn btn-warning text-light"><b>More</b></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sec5">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-4 col-lg-4 col-sm-6 mt-3">
+        <div class="inbox27 bg-light text-center">
+          <i class="bi1 bi-geo-alt text-warning"></i>
+          <p class="h6"> ADDRESS</p>
+            <p class="para3">27 13 Lowe Haven</p>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-sm-6 mt-3">
+        <div class="inbox27 bg-warning text-center">
+          <i class="bi1 bi-phone-vibrate text-light"></i>
+          <p class="h6">PHONE</p>
+          <p class="para3">+111220345</p>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-sm-12 mt-3">
+        <div class="inbox27 bg-white text-center">
+          <i class="bi1 bi-envelope-paper text-warning"></i>
+          <p class="h6">E-MAIL</p>
+          <p class="para3">Business@info.com</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="inbox28">
+            <p class=" pr3 text-center text-light mt-5"><b> Sample text click to select the box. Click again or double <br>click to start editing the text.</b>  </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 </body>
 </html>
